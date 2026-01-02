@@ -1,6 +1,31 @@
 <h2>This project demonstrates the implementation of a host-based firewall on a Linux system using the iptables utility. The firewall is designed to restrict unauthorized access by blocking traffic from specific IP addresses and denying connections to selected network ports.<h2>
 <h2>The goal of this project is to apply foundational cybersecurity principles such as least privilege, default-deny security, and network traffic control in a real-world Linux environment.</h2>
-<h2>Here's how i did it. firstly i logged into the root account because i needed root previledges for easy configuration. Then i confirmed the default traffic policies...</h2>
+
+
+<h2>tools used</h2>
+Linux (Ubuntu)
+
+iptables
+
+Basic networking concepts (TCP/UDP, ports, policies)
+
+  <h2>Project description</h2>
+
+In this lab, I configured a Linux server to act as a secure host by implementing firewall rules with iptables.
+Key steps included:
+Setting default policies to block unwanted traffic
+
+Blocking/ allowing essential services such as SSH (port 22), DNS (port 53) and FTP (port 21)
+
+Blocking specific IP addresses from connecting to the server
+
+Disconnecting the machine from the outside world to isolate it
+
+Testing rules to ensure proper functionality
+
+All configuration was performed as a root user, Such adminstrative privileges are required to manage firewall rules with iptables.
+    
+<h2>firstly i logged into the root account because i needed root previledges for easy configuration. Then i confirmed the default traffic policies...</h2>
 
 
 
@@ -43,6 +68,12 @@
 
 <img width="1792" height="832" alt="image" src="https://github.com/user-attachments/assets/b85550b1-9d65-421a-a86f-668efeebdc35" />
 
+<h2>Results</h2>
+Unauthorized traffic and blocked IPs were successfully prevented from accessing the server
+
+The server was successfully isolated from the outside network when needed
+
+Overall security of the server was significantly enhanced
 
 <h2>this project taught me how to use iptables to implement a host-based firewall on Linux, applying least privilege and default-deny principles to control network traffic, block unauthorized IP addresses and ports, and reduce the system’s attack surface in a real-world environment.</h2>
 
